@@ -1,0 +1,26 @@
+doctype
+html
+  head
+    title Add new medicine
+  body
+    h3 Comment Details
+    form(id='form', method='post', action='/medicine/create')
+      label(for='name') Name
+      input(type='text', id='name', name='name')
+      <br/><br/>
+      label(for='manufacturer') Manufacturer
+      input(type='text', id='manufacturer', name='manufacturer')
+      <br/><br/>
+      label(for='type') Type
+      input(type='text', id='type', name='type')
+      <br/><br/>
+      label(for='batchno') Batchno
+      input(type='text', id='batchno', name='batchno')
+      <br/><br/>
+      label(for='expdate') Expdate
+      input(type='text', id='expdate', name='expdate')
+      <br/><br/>
+      label(for='price') Price
+      input(type='text', id='price', name='price')
+      <br/><br/>
+      input(type='submit', value='Add Medicine')
