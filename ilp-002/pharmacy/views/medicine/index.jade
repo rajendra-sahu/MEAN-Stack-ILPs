@@ -1,0 +1,31 @@
+doctype
+html
+  head
+    title=title
+  body
+    h3 Medicines
+    table
+      tr
+        th Name
+        th Manufacturer
+        th Type
+        th Batchno
+        th Expdate
+        th Price
+        th Edit
+        th Delete
+      each item in medicines
+        tr
+          td #{item.name}
+          td #{item.manufacturer}
+          td #{item.type}
+          td #{item.batchno}
+          td #{item.expdate}
+          td #{item.price}
+          td
+            a(href='/medicine/edit/#{item.id}') Edit
+          td
+            a(href='/medicine/delete/#{item.id}') Delete
+    p
+    #menu
+      a(href='/medicine/create') Add new medicine
